@@ -2,9 +2,47 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #030422;
-    color: white;
+    height: 50px;
 }
 
-.header-right {
-    align-self: flex-end;
+nav a {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+}
+/* left header */
+nav div:nth-child(1) {
+    padding: 12px 45px;
+}
+/* right header */
+nav div:nth-child(2) > a {
+    padding: 12px 12px;
+    margin: 2px 4px;
+}
+
+nav .admin-button {
+    padding: 6px 25px !important;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+nav .login-button {
+    display: inline-block;
+    padding: 0 !important;
+    margin: 0 10px !important;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    line-height: 32px;
+    font-size: 18px;
+}
+
+.active {
+    background-color: white;
+    color: #030422;
 }

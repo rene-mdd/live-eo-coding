@@ -1,4 +1,10 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+  Link,
+} from "react-router-dom";
 import "./header-styles.css";
 import Admin from "../../pages/admin";
 import Dashboard from "../../pages/dashboard";
@@ -12,22 +18,23 @@ export default function Header() {
     <Router>
       <>
         <nav>
-          <Link href="#home" to="/">
-            LiveEO
-          </Link>
-          <div className="header-right">
-            <Link to="map">Map</Link>
-            <Link to="tasks">Tasks</Link>
-            <Link to="dashboard">Dashboard</Link>
-            <Link to="comments">Comments</Link>
-            <Link to="admin">Admin</Link>
-            <Link to="login">L</Link>
+          <div>
+            <Link to="/">LiveEO</Link>
+          </div>
+          <div>
+            <NavLink to="map">Map</NavLink>
+            <NavLink to="tasks">Tasks</NavLink>
+            <NavLink to="dashboard">Dashboard</NavLink>
+            <NavLink to="comments">Comments</NavLink>
+            <NavLink to="admin" className="admin-button">
+              Admin
+            </NavLink>
+            <NavLink to="login" className="login-button">
+              L
+            </NavLink>
           </div>
         </nav>
         <Switch>
-          {/* <Route exact path="/">
-            <Redirect to="/comments" />
-          </Route> */}
           <Route path="/admin">
             <Admin />
           </Route>

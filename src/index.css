@@ -1,3 +1,4 @@
+/* Global styles */
 @import "normalize.css";
 @import "sanitize.css";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
@@ -5,3 +6,4 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+html { font-size: 10px; }

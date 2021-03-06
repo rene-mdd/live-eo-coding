@@ -45,4 +45,5 @@ nav .login-button {
 .active {
     background-color: white;
     color: #030422;
+    font-weight: 600;
 }

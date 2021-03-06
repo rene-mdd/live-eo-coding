@@ -15,8 +15,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -25,8 +27,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -35,8 +39,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -45,8 +51,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -55,8 +63,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -65,8 +75,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
         </div>
@@ -77,8 +89,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -87,8 +101,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -97,8 +113,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -107,8 +125,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -117,8 +137,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
           <div>
@@ -127,8 +149,10 @@ export default function Comments() {
               <address>email@email.com</address>
             </div>
             <div>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. dolorum
-              libero magnam reiciendis hic deleniti architecto unde nesciunt!
+              <p>
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                lorem ipsum lorem ipsum lorem ipsum lorem ipsum v v v
+              </p>
             </div>
           </div>
         </div>

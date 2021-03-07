@@ -1,15 +1,9 @@
 import { Link, NavLink } from "react-router-dom";
 import "./header-styles.css";
-// import Admin from "../../pages/admin";
-// import Dashboard from "../../pages/dashboard";
-// import Map from "../../pages/map";
-// import Tasks from "../../pages/tasks";
-// import Comments from "../../pages/comments";
-// import Login from "../../pages/login";
 
 export default function Header() {
   return (
-    <nav>
+    <nav className="header-nav">
       <div>
         <Link to="/">LiveEO</Link>
       </div>

@@ -1,6 +1,8 @@
+import "./tasks-styles.css";
+
 export default function Tasks() {
   return (
-    <div>
+    <div className="tasks">
       <h1>Tasks</h1>
     </div>
   );

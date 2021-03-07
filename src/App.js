@@ -4,7 +4,7 @@ import Admin from "./pages/admin/admin";
 import Dashboard from "./pages/dashboard/dashboard";
 import Map from "./pages/map/map";
 import Tasks from "./pages/tasks/tasks";
-import Comments from "./pages/comments/comments";
+import Comments from "./pages/comments/commentsPage";
 import Login from "./pages/login/login";
 import Home from "./pages/home/home";
 

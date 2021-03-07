@@ -1,0 +1,7 @@
+.tasks {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 50px);
+    align-items: center;
+    width: 100vw;
+}

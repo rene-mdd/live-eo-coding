@@ -1,6 +1,8 @@
+import "./dashboard-styles.css";
+
 export default function Dashboard() {
   return (
-    <div>
+    <div className="dashboard">
       <h1>Dashboard</h1>
     </div>
   );

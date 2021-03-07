@@ -1,4 +1,4 @@
-nav {
+.header-nav {
     display: flex;
     justify-content: space-between;
     background-color: #030422;
@@ -14,7 +14,7 @@ nav a {
 }
 /* left header */
 nav div:nth-child(1) {
-    padding: 12px 45px;
+    padding: 14px 50px;
 }
 /* right header */
 nav div:nth-child(2) > a {
@@ -31,7 +31,7 @@ nav .admin-button {
 nav .login-button {
     display: inline-block;
     padding: 0 !important;
-    margin: 0 10px !important;
+    margin: 0 15px 0 5px !important;
     width: 32px;
     height: 32px;
     border-radius: 50%;

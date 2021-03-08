@@ -5,7 +5,7 @@
     height: 50px;
 }
 
-nav a {
+.header-nav a {
     color: white;
     font-size: 14px;
     font-weight: 400;
@@ -13,22 +13,22 @@ nav a {
     display: inline-block;
 }
 /* left header */
-nav div:nth-child(1) {
+.header-nav div:nth-child(1) {
     padding: 14px 50px;
 }
 /* right header */
-nav div:nth-child(2) > a {
+.header-nav div:nth-child(2) > a {
     padding: 12px 12px;
     margin: 2px 4px;
 }
 
-nav .admin-button {
+.admin-button {
     padding: 6px 25px !important;
     border-radius: 5px;
     border: 1px solid white;
 }
 
-nav .login-button {
+.login-button {
     display: inline-block;
     padding: 0 !important;
     margin: 0 15px 0 5px !important;
@@ -42,7 +42,7 @@ nav .login-button {
     font-size: 18px;
 }
 
-.active {
+.header-nav .active {
     background-color: white;
     color: #030422;
     font-weight: 600;

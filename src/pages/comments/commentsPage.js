@@ -12,7 +12,7 @@ export default function CommentsPage() {
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [commentsPerPage] = useState(12);
-  console.log(currentPage);
+  const [modal, setModal] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -53,14 +53,24 @@ export default function CommentsPage() {
     } else setCurrentPage(Math.ceil(currentPage) + pageNumber);
   };
 
+  // switch modal back to normal
+
+  const modalFunc = (value) => {
+    setModal(value);
+  };
+
   return (
     <div className="main">
       <div>
         <h1>Comments</h1>
-        <button type="button" className="create-comment">
+        <button
+          type="button"
+          className="create-comment"
+          onClick={() => setModal((prevState) => !prevState)}
+        >
           Create comment
         </button>
-        {/* <Modal /> */}
+        {modal && <Modal modalFunc={modalFunc} />}
       </div>
       <div className="comments-div">
         <Comments comments={currentComments} loading={loading} />

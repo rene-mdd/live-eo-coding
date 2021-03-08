@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import "./modal-styles.css";
 import React, { useState } from "react";
 
-export default function Modal() {
+export default function Modal({ modalFunc }) {
   const [toggle, setToggle] = useState(true);
 
   return (
@@ -10,8 +11,10 @@ export default function Modal() {
       <div className="modal-content">
         <button
           type="button"
-          onClick={() => setToggle(false)}
-          onKeyDown
+          onClick={() => {
+            modalFunc(false);
+            setToggle((prevState) => !prevState);
+          }}
           className="close"
         >
           &times;

@@ -1,10 +1,5 @@
-/* eslint-disable react/self-closing-comp */
-/* eslint-disable jsx-a11y/label-has-associated-control */
-/* eslint-disable no-nested-ternary */
-/* eslint-disable no-plusplus */
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-import React, { useState } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 
 export default function Pagination({
   commentsPerPage,
@@ -14,6 +9,7 @@ export default function Pagination({
   backPage,
   forwardPage,
 }) {
+  // Display the correct pages range of numbers
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalComments / commentsPerPage); i++) {
@@ -68,7 +64,7 @@ export default function Pagination({
       <ul className="pagination">
         {resultArray.map((number) => (
           <li key={number}>
-            <label className="container">
+            <label htmlFor="page" className="container">
               <input
                 key={number}
                 onClick={() => {
@@ -76,7 +72,7 @@ export default function Pagination({
                 }}
                 type="radio"
                 value={number}
-                name="radio"
+                id="page"
               />
               <span className="checkmark">{number}</span>
             </label>
@@ -89,3 +85,23 @@ export default function Pagination({
     </nav>
   );
 }
+
+// Props type checking
+
+Pagination.propTypes = {
+  commentsPerPage: PropTypes.number,
+  totalComments: PropTypes.number,
+  paginate: PropTypes.func,
+  currentPage: PropTypes.number,
+  backPage: PropTypes.func,
+  forwardPage: PropTypes.func,
+};
+
+Pagination.defaultProps = {
+  commentsPerPage: 12,
+  totalComments: 500,
+  paginate: 1,
+  currentPage: 1,
+  backPage: 1,
+  forwardPage: 1,
+};

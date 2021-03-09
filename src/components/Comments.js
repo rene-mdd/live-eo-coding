@@ -11,7 +11,7 @@ export default function Comments({ comments, loading }) {
         <div key={item.id} className="comments">
           <div key={item.id}>
             <h2 key={item.name}>{item.name.split(" ")[0]}</h2>
-            <address key={item.mail}>{item.email}</address>
+            <address key={item.email}>{item.email}</address>
           </div>
           <div>
             <p key={item.id}>{item.body}</p>
@@ -22,7 +22,7 @@ export default function Comments({ comments, loading }) {
   );
 }
 
-// Type checking
+// Props type checking
 
 Comments.propTypes = {
   comments: PropTypes.arrayOf(

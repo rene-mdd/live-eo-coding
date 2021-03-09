@@ -1,100 +1,110 @@
-.pagination-nav {
+.comments-div .pagination-nav {
   display: flex;
   justify-content: flex-end;
-padding: 30px 0;
+  padding: 30px 0;
 }
 
-h1 {
-    margin: auto 0;
-    font-weight: 800;
-    font-size: 2.3em;
+.main div h1 {
+  margin: auto 0;
+  font-weight: 800;
+  font-size: 2.3em;
 }
 
-.create-comment  {
-    height: 45px;
-    width: 165px;
-    border-radius: 10px;
-    color: white;
-    background-color: #030422;
-    font-weight: 600;
-    font-size: 1.5em;
-    margin: auto 0;
-    cursor: pointer; 
+.create-comment {
+  height: 45px;
+  width: 165px;
+  border-radius: 10px;
+  color: white;
+  background-color: #030422;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.create-comment:hover {
+  opacity: 0.7;
+  transition: 1s;
 }
 
 p {
-    font-size: 1.3em;
-    font-weight: 600;
-    line-height: 1.1;
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.1;
 }
 
-h2 {
-    display: inline-block;
-    padding: 0;
-    margin: 0 2px;
-    font-size: 18px;
-    font-weight: 800;
+.comments div h2 {
+  display: inline-block;
+  padding: 0;
+  margin: 0 2px;
+  font-size: 18px;
+  font-weight: 800;
 }
 
-address {
-    display: inline-block;
-    font-weight: 500;
-    margin: 5px 15px 0 0;
-    font-size: 12px;
+.comments div address {
+  display: inline-block;
+  font-weight: 500;
+  margin: 5px 15px 0 0;
+  font-size: 12px;
 }
 
-.main>div:first-child {
-    display: flex;
-    justify-content: space-between;
-    max-width: 70vw;
-    min-width: 320px;
-    height: 130px;
-    margin: auto;
+.main>div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70vw;
+  min-width: 320px;
+  height: 130px;
+  margin: auto;
 }
 
 .comments-div {
-    max-width: 70vw;
-    min-width: 320px;
-    margin: auto;
+  max-width: 70vw;
+  min-width: 320px;
+  margin: auto;
 }
 
 /*comments div */
 
 .comments-outter-div {
-    display: grid;
-    gap: 14px;
-    grid-template-columns: 1fr;
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: 950px) {
-    .comments-outter-div>div:nth-child(6n + 5),
-    .comments-outter-div>div:nth-child(6n + 6) {
-        grid-column: 2 span;
-    }
-    .comments-outter-div {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .comments-outter-div>div:nth-child(6n + 5), .comments-outter-div>div:nth-child(6n + 6) {
+    grid-column: 2 span;
+  }
+  .comments-outter-div {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
-.comments-outter-div > div {
-    border-radius: 10px;
-    background-color: #f4f9fd;
-    -webkit-box-shadow: 3px 3px 5px 6px rgb(207, 207, 207);
-    -moz-box-shadow: 3px 3px 5px 6px rgb(207, 207, 207);
-    box-shadow: 6px 6px 4px -3px rgb(207, 207, 207);
+.comments-outter-div>div {
+  border-radius: 10px;
+  background-color: #f4f9fd;
+  -webkit-box-shadow: 3px 3px 5px 6px rgb(207, 207, 207);
+  -moz-box-shadow: 3px 3px 5px 6px rgb(207, 207, 207);
+  box-shadow: 6px 6px 4px -3px rgb(207, 207, 207);
+}
+
+.comments-outter-div>div:hover {
+border: 2px solid rgb(117, 117, 117);
+background-color: #75B3E7;
+transition: 0.5s;
 }
 
 .comments-outter-div div div:nth-child(1) {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: hsl(264, 100%, 97%);
-    border-radius: 10px 10px 0 0;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: hsl(264, 100%, 97%);
+  border-radius: 10px 10px 0 0;
+  padding: 10px 20px;
 }
 
 .comments-outter-div>div div:nth-child(2) {
-    margin: 15px 12px;
+  margin: 15px 12px;
 }
 
 /* Pagination styles */
@@ -125,84 +135,62 @@ address {
   outline: none;
 }
 
-.forward > input[type="button"] {
+.pagination-nav .forward>input[type="button"] {
   margin: -7px 0px 7px 13px;
 }
 
-.back > input[type="button"] {
+.pagination-nav .back>input[type="button"] {
   margin: -4px 11px 10px 0px;
 }
 
+.modal .user-form {
+  width: 300px;
+  margin: auto;
+  font-size: 1.6em;
+}
+
+.modal .user-form>label>input, textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #343837;
+  border-radius: 5px;
+}
+
+.modal .submit {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+}
+
+.modal .delete {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #D5174E;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 5px #999;
+}
 
 /* Pagination selector styles */
 
 /* The selector */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 22px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.container:nth-child(5) {
-  margin: 0 6px 0 34px;
-}
-
-/* Hide the browser's default radio button */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
-}
 
 /* .page-selector::after {
   padding: 3px 14px;
@@ -241,8 +229,6 @@ address {
   z-index: 10;
 } */
 
-
-
 /* input[type=checkbox] + label {
   display: inline-block;
   width: 20px;
@@ -258,4 +244,3 @@ address {
   color: red;
 
 } */
-

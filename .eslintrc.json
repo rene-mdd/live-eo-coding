@@ -8,7 +8,8 @@
         "react/react-in-jsx-scope": "off",
         "quotes": ["error", "double", { "allowTemplateLiterals": true }],
         "linebreak-style": "off",
-        "import/no-extraneous-dependencies": 1
+        "import/no-extraneous-dependencies": 1,
+        "no-plusplus": "off"
       },
      "env": {
        "jest": true

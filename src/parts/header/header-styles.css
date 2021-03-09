@@ -12,6 +12,10 @@
     text-decoration: none;
     display: inline-block;
 }
+
+.header-nav a:hover {
+  opacity: 0.5;
+}
 /* left header */
 .header-nav div:nth-child(1) {
     padding: 14px 50px;
@@ -36,7 +40,7 @@
     height: 32px;
     border-radius: 50%;
     background-color: white;
-    color: black;
+    color: black !important;
     text-align: center;
     line-height: 32px;
     font-size: 18px;
@@ -46,4 +50,5 @@
     background-color: white;
     color: #030422;
     font-weight: 600;
+    transition: 1s;
 }

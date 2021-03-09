@@ -1,8 +1,6 @@
-/* eslint-disable no-unused-vars */
 import "./comments-styles.css";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-// import list from "./list";
 import Pagination from "../../components/Pagination";
 import Comments from "../../components/Comments";
 import Modal from "../../parts/modal/modal";
@@ -53,10 +51,34 @@ export default function CommentsPage() {
     } else setCurrentPage(Math.ceil(currentPage) + pageNumber);
   };
 
-  // switch modal back to normal
+  // Close modal window
 
   const modalFunc = (value) => {
     setModal(value);
+  };
+
+  // Create new user data
+
+  const createUser = (user, deleteUser) => {
+    // Comments object deep copy
+    const cloneComments = JSON.parse(JSON.stringify(comments));
+    let commentsWithDeletedUser = [];
+
+    const sameUser = cloneComments.findIndex(
+      (element) => element.email === user.email
+    );
+    // Filter to delete user
+    if (deleteUser === "delete") {
+      commentsWithDeletedUser = cloneComments.filter(
+        (eraseUser) => eraseUser.email !== user.email
+      );
+      setComments([...commentsWithDeletedUser]);
+      // Updating user
+    } else if (sameUser >= 0) {
+      Object.assign(cloneComments[sameUser], user);
+      setComments([...cloneComments]);
+      // Add user
+    } else setComments((prevState) => [user, ...prevState]);
   };
 
   return (
@@ -70,7 +92,7 @@ export default function CommentsPage() {
         >
           Create comment
         </button>
-        {modal && <Modal modalFunc={modalFunc} />}
+        {modal && <Modal createUser={createUser} modalFunc={modalFunc} />}
       </div>
       <div className="comments-div">
         <Comments comments={currentComments} loading={loading} />

@@ -14,9 +14,9 @@ export default function Modal({ modalFunc, createUser }) {
     setContact({ ...contact, [e.target.name]: e.target.value });
 
   // Set user and send it to commentsPage
-  const handleSubmit = (e) => {
+  const handleSubmit = (evt) => {
     createUser(contact);
-    e.preventDefault();
+    evt.preventDefault();
     setContact({
       ...contact,
       name: "",

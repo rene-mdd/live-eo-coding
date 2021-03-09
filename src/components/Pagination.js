@@ -1,4 +1,6 @@
-import React from "react";
+/* eslint-disable no-undef */
+/* eslint-disable no-param-reassign */
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 export default function Pagination({
@@ -9,7 +11,10 @@ export default function Pagination({
   backPage,
   forwardPage,
 }) {
-  // Display the correct pages range of numbers
+  // State manager to re render pagination styles
+  const [count, setCounter] = useState([false, false, false]);
+
+  // Display the correct page range of numbers
   const pageNumbers = [];
 
   for (let i = 1; i <= Math.ceil(totalComments / commentsPerPage); i++) {
@@ -27,61 +32,51 @@ export default function Pagination({
     .slice(0, 3)
     .concat(...["..."], newPaginationArray);
 
+  // Code for the manipulation of pagination numbers background-color toggle
+
+  const focusFunc = (evt) => {
+    const elementValue = evt.target.value;
+    const setBackground = [true, false, false];
+    if (evt.target.value === "1") {
+      setCounter(() => setBackground);
+    } else if (elementValue === "2") {
+      setCounter(() => [false, true, false]);
+    } else if (elementValue === "3") {
+      setCounter(() => [false, false, true]);
+    } else {
+      setCounter(() => [false, false, false]);
+    }
+  };
+
   return (
     <nav className="pagination-nav">
-      {/* pagination background style selection - below */}
-
-      {/* <div className="selector-div">
-        <label className="container">
-          <input type="radio" name="radio" />
-          <span className="checkmark" />
-        </label>
-        <label className="container">
-          <input type="radio" name="radio" />
-          <span className="checkmark" />
-        </label>
-        <label className="container">
-          <input type="radio" name="radio" />
-          <span className="checkmark" />
-        </label>
-        <label className="container">
-          <input type="radio" name="radio" />
-          <span className="checkmark" />
-        </label>
-        <label className="container">
-          <input type="radio" name="radio" />
-          <span className="checkmark" />
-        </label>
-        <label className="container">
-          <input type="radio" name="radio" />
-          <span className="checkmark">1</span>
-        </label>
-      </div> */}
-      {/* pagination background style selection - above */}
-      <label htmlFor="back" className="pagination back">
+      <label htmlFor="back" className="back">
         <input onClick={() => backPage(1)} type="button" value="<" />
       </label>
       <ul className="pagination">
-        {resultArray.map((number) => (
+        {resultArray.map((number, index) => (
           <li key={number}>
-            <label htmlFor="page" className="container">
+            <label
+              htmlFor="page"
+              className={count[index] ? "pagination-background" : ""}
+            >
               <input
                 key={number}
-                onClick={() => {
+                onClick={(evt) => {
                   paginate(number);
+                  focusFunc(evt);
                 }}
-                type="radio"
-                value={number}
+                type="button"
                 id="page"
+                value={number}
               />
-              <span className="checkmark">{number}</span>
             </label>
           </li>
         ))}
-        <label htmlFor="forward" className="pagination forward">
-          <input onClick={() => forwardPage(1)} type="button" value=">" />
-        </label>
       </ul>
+      <label htmlFor="forward" className="forward">
+        <input onClick={() => forwardPage(1)} type="button" value=">" />
+      </label>
     </nav>
   );
 }

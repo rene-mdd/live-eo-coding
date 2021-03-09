@@ -8,13 +8,13 @@ export default function Comments({ comments, loading }) {
   return (
     <div className="comments-outter-div">
       {comments.map((item) => (
-        <div key={item.id} className="comments">
-          <div key={item.id}>
+        <div key={`div ${item.id}`} className="comments">
+          <div key={`inner ${item.id}`}>
             <h2 key={item.name}>{item.name.split(" ")[0]}</h2>
             <address key={item.email}>{item.email}</address>
           </div>
-          <div>
-            <p key={item.id}>{item.body}</p>
+          <div key={item.id}>
+            <p key={`body ${item.id}`}>{item.body}</p>
           </div>
         </div>
       ))}

@@ -28,3 +28,48 @@
     font-size: 28px;
     font-weight: bold;
   }
+
+  .modal .user-form {
+    width: 300px;
+    margin: auto;
+    font-size: 1.6em;
+  }
+  
+  .modal .user-form>label>input, textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #343837;
+    border-radius: 5px;
+  }
+  
+  .modal .submit {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .modal .delete {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #D5174E;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px #999;
+  }

@@ -1,3 +1,5 @@
+/* Comments styles */
+
 .comments-div .pagination-nav {
   display: flex;
   justify-content: flex-end;
@@ -27,7 +29,7 @@
   transition: 1s;
 }
 
-p {
+.comments p {
   font-size: 1.3em;
   font-weight: 600;
   line-height: 1.1;
@@ -89,9 +91,9 @@ p {
 }
 
 .comments-outter-div>div:hover {
-border: 2px solid rgb(117, 117, 117);
-background-color: #75B3E7;
-transition: 0.5s;
+  border: 2px solid rgb(117, 117, 117);
+  background-color: #75B3E7;
+  transition: 0.5s;
 }
 
 .comments-outter-div div div:nth-child(1) {
@@ -112,14 +114,35 @@ transition: 0.5s;
 .pagination {
   display: flex;
   justify-content: flex-end;
+  margin: 2px 0px 0px 0px;
 }
 
 .pagination li {
   line-height: 0.5;
-  margin: 0 5px;
+  margin: 0 0px;
+  font-size: 1.3em;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
 }
 
-.pagination input[type="button"] {
+.pagination-nav > label, .pagination > li > label {
+ width: 25px;
+ height: 25px;
+ display: inline-block;
+ position: relative;
+ border-radius: 100%;
+}
+
+.pagination li:nth-child(5) label {
+ left: 14%;
+}
+
+.pagination li:nth-child(4) label {
+  left: 26%;
+}
+
+ .pagination input[type="button"] {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -127,120 +150,49 @@ transition: 0.5s;
   display: inline;
   margin: 0;
   padding: 0;
-  font-size: 2.2em;
-  z-index: 10;
+  font-size: 1.1em;
+  position: absolute;
+  top: 15%;
+  right: 34%;
 }
 
+/* Erase pagination input default styles */
+
+.pagination-nav>.back input[type="button"], .forward input[type="button"] {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 1.9em;
+  margin-top:3px;
+  position: absolute;
+  top: 15%;
+  right: 34%;
+}
+
+.pagination-nav>.back input[type="button"]:focus,
+.forward input[type="button"]:focus,
 .pagination input[type="button"]:focus {
   outline: none;
 }
 
+/* Set pagination numbers background color */
+
+.pagination-nav .pagination .pagination-background, .pagination-background > input {
+  background-color: #61b7f8;
+  color: white !important;
+}
+
+.pagination-nav > .back > input[type="button"] {
+margin: 0px 0px 30px 0px;
+}
+
 .pagination-nav .forward>input[type="button"] {
-  margin: -7px 0px 7px 13px;
+  margin-top: -1px;
 }
 
-.pagination-nav .back>input[type="button"] {
-  margin: -4px 11px 10px 0px;
-}
 
-.modal .user-form {
-  width: 300px;
-  margin: auto;
-  font-size: 1.6em;
-}
 
-.modal .user-form>label>input, textarea {
-  display: block;
-  width: 100%;
-  border: 1px solid #343837;
-  border-radius: 5px;
-}
-
-.modal .submit {
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 5px 0;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #4CAF50;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 5px #999;
-}
-
-.modal .delete {
-  display: inline-block;
-  padding: 5px 10px;
-  margin: 5px 0;
-  font-size: 14px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: #D5174E;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 5px #999;
-}
-
-/* Pagination selector styles */
-
-/* The selector */
-
-/* .page-selector::after {
-  padding: 3px 14px;
-  border-radius: 50%;
-  background-color: orange;
-}
-
-#back:checked ~ .page-selector::after {
-  content: " "
-}
-
-#button-one:checked ~ .page-selector::after {
-  content: " "
-}
-
-#button-two:checked ~ .page-selector::after {
-  content: " "
-}
-
-#back, #button-one, #button-two {
-  opacity: 1;
-}
-
-.page-selector {
-  width: 15px;
-  height: 15px;
-  margin: 0px 5px;
-  display: inline-block;
-  border: 1px solid black;
-  position: relative;
-}
-
-.page-selector span {
-  position: absolute;
-  left: 50%;
-  z-index: 10;
-} */
-
-/* input[type=checkbox] + label {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: yellowgreen;
-  font-style: italic;
-} 
-
-.pagination label input[type="checkbox"]:checked + label {
-  background-color: #0485D1 !important;
-  width: 20px;
-  height: 20px;
-  color: red;
-
-} */

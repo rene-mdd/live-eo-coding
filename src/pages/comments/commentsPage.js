@@ -33,7 +33,8 @@ export default function CommentsPage() {
     indexOfLastComment
   );
 
-  // change pages
+  // Change pages
+
   const paginate = (pageNumber) => {
     if (pageNumber === "...") {
       return;
